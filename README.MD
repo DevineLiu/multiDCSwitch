@@ -4,14 +4,17 @@
 
 本地安装
 
-```yaml
+```shell
+git clone https://github.com/DevineLiu/multiDCSwitch.git
+cd multiDCSwitch
 pip install -r requirements.txt
 ```
 
 docker 启动
 
-```yaml
-docker run -it -v /Users/alauda/.kube:/root/.kube  test -h
+```shell
+docker pull ghcr.io/devineliu/multidcswitch:v0.0.1
+docker run -it -v $HOME/.kube:/root/.kube  ghcr.io/devineliu/multidcswitch:v0.0.1 -h
 ```
 
 ## 配置及使用
