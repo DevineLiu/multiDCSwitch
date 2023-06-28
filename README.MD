@@ -110,7 +110,7 @@ update shake: shake2 replicas 0
 1. 强制尝试切换，关闭源端和目的端的shake同步
 
 ```yaml
-> python multiDCswitch.py example.ini --failover
+> python multiDCswitch.py example.ini --try_failover
 update shake: shake1 replicas 0
 update shake: shake2 replicas 0
 ```
